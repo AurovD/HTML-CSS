@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    background: #fff;
+    font-size: 20px;
+    width: 50vh;
+    height: 50vh;
+    /* min-height: 70px;
+    max-height: 150px; */
+    overflow: auto;
+    border-width: 2px 5px 0 8px;
+    border-color: red;
+    border-style: solid;
+    border: solid 5px;
+    border-right-color: red;
+    border-bottom: lime double 8px;
+    padding: 50px 100px 0;
+    margin: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700; /* 100-900 */
+    font-style: italic;
+    /* font-variant: small-caps; */
+    font-family: Arimo, Helvetica, "Segoe Print", sans-serif;
+    line-height: 2;
+    font: italic 700 25px / 30px Arimo, sans-serif;
+}
+.menu {
+    background-color: #008800;
+    font-size: 0;
+}
+.menu > li {
+    background: #ffff00;
+    display: inline-block;
+    height: 50px;
+    width: calc(100% / 3 - 4px); 
+    font-size: 1rem;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #000;
+    font: 100 40px / 50px "Mistral", cursive;
+}
+.menu > li:hover {
+    background: #00ff00;
+}
+a {
+    color: orangered;
+}
+a:active {
+    color: black;
+}
+
+.main {
+    width: 1000px;
+    background: #ff0000;
+    margin: 0 auto;
+    min-height: 100vh;
+}

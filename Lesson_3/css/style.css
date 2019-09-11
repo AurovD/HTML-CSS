@@ -1,0 +1,72 @@
+/* % от размера родителя
+
+viewport
+vw - размер от экрана
+vh - размер эт экрана по высоте
+
+display: block, inline, table, list-item, inline-block
+
+интерлиньяж 
+*/
+* {
+    margin: 0;
+    padding: 0; /* обнуление всех отступов, маркеры у списков исчезли*/
+}
+.box {
+    background: #0088aa;
+    font-size: 20px;
+    /* рпрл */
+    width: 30vw;
+    height: 50vh; /* текст вылезает из div */
+    overflow: auto; /* отвечает за переполение visible, hidden, scroll прокрутка по верт и гориз - при этом он встаивается в элемент и крадет его ширину, иногда ведет себя непредстазуемо,  auto - только по той стороне где это необъодимо */
+    /* min-height: 70px;/* увеличивает размер по размеру контента укахывая min предел*/
+    /* max-height: 150pxуказ мин размер, далее overflow */ 
+    border-width: 2px 5px 0 8px; 
+    border-color: red;
+    border-style: solid;
+    border: 5px solid #000; /* общее правило, если один из свойств то 1px иblack */
+    border-right-color: red; /* отдельно для правой границы */
+    border-bottom: lime double 8px; /* общее правило для нижней границы */
+    padding: 50px 100px 0; /*  50 верх 100 сороны 0  низ */
+    margin: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700; /*  normal, bolder, lighter, bold, 100-900 */ 
+    font-style: italic;
+    font-variant: small-caps;/* small-caps - строчные и заглавные буквы, */
+    font-family: Arimo, Helvetica, "Segoe Print", sans-serif; /*  семейство, шрифт с пробелом в кавычки*/
+    /*  google fonts*/
+    line-height: 30px; /*  высота строки зависит от размера шрифта*/
+    font: italic 25px / 30px Arimo sans-serif; /*  общее правло должна содержать 2 правило размер и семейство, font-style, font-variant, font-weight, f-size, line-height, font-family через пробел, кроме списка шрифтов */
+}
+.menu {
+    background-color: #008800; 
+    font-size: 0; /* чтоб не было пробелов*/
+}
+.menu > li {
+    background: #ffff00;
+    display: inline-block;
+    height: 50px;
+    width: calc(100% / 3 - 4px); /* calc() - калькуляторю простаноство между li - пробел. обнулить шрифт родителю*/
+    font-size: 1rem; /* возвращаем шрифт*/
+    text-align: center;
+    line-height: 50px; /* высота строки. для одной строки посредине*/
+    border: 2px solid #000; /* ширина увеличилась и отнимаем от ширины - 4px*/
+    font: 100 40px / 50px "Mistral", cursive;
+}
+.menu > li:hover {
+    background: #008800;
+}
+.main {
+    width: 1000px;
+    background-color: #ff0000;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+a {
+    color: orangered;
+}
+a:active {
+    color: black;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 2</title>
+    <style>
+        p {
+            color: #7CFC00;
+        }
+        table, td, th {
+            border-style: solid;
+            border-collapse: collapse;
+            color: #000;
+            text-align: center;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+        #lawngreen {
+            background-color: #7CFC00;
+        }
+        #lawngreen + td{
+            width: 80px;
+            height: 70px;
+            background-image: url(Images/lawngreen.jpg);
+            background-size: contain;
+        }
+        #turquoise {
+            background-color: rgb(72, 209, 204);
+        }
+        #turquoise + td{
+            height: 80px;
+            background-image: url(Images/turquoise.jpg);
+            background-size: contain;
+        }
+        #skyblue {
+            background-color: rgb(135, 206, 235);
+        }
+        #skyblue + td{
+            height: 55px;
+            background-image: url(Images/skyblue.jpg);
+            background-size: contain;
+        }
+        #forest {
+            background-color: rgb(34, 139, 34);
+        }
+        #forest + td{
+            height: 80px;
+            background-image: url(Images/forest.jpg);
+            background-size: contain;
+        }
+        #dim {
+            background-color: rgb(105, 105, 105);
+        }
+        #dim + td{
+            height: 65px;
+            background-image: url(Images/dim.jpg);
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>NAME</th>
+            <th>RGB</th>
+            <th>HEX</th>
+            <th>color</th>
+            <th>image</th>
+        </tr>
+        <tr>
+            <td>Газон</td>
+            <td>LawnGreen</td>
+            <td>rgb(124, 252, 0)</td>
+            <td>#7CFC00</td>
+            <td id="lawngreen"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Умеренный бирюзовый </td>
+            <td>MediumTurquoise</td>
+            <td>rgb(72, 209, 204)</td>
+            <td>#48D1CC</td>
+            <td id="turquoise"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Небесно-голубой</td>
+            <td>SkyBlue</td>
+            <td>rgb(135, 206, 235)</td>
+            <td>#87CEEB</td>
+            <td id="skyblue"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Зеленый лес</td>
+            <td>ForestGreen</td>
+            <td>rgb(34, 139, 34)</td>
+            <td>#228B22</td>
+            <td id="forest"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Тускло-серый </td>
+            <td>DimGray</td>
+            <td>rgb(105, 105, 105)</td>
+            <td>#696969</td>
+            <td id="dim"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

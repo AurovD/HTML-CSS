@@ -1,0 +1,195 @@
+ <!-- 255, 255, 0 yellow
+255, 128, 0 orange
+255, 0, 255 magenta
+0, 255, 255 aqua
+Rgb можно писать в процентах
+Серый – все цвета в одинаковом количестве всего 128
+HEX 
+0 1 2 3 4 5 6 7 8 9 A B C D E F  16-формат
+FF – 256 
+#ff red 80 green 00 blue
+#ffffff #fff
+#ff2288 #f28
+Единицы измерения:
+Em размер от родительского элемента
+0.25 = .25
+1 rem = 20px  стандарт можно устаноавливать через html font size
+2 rem = 40px
+
+Селекторы
+•	- 
+Id – то что никогда не повторяется. Супер уникальный стиль, поработать с джаваскрипт.
+Class – 
+
+Background: 
+
+background-position: 200px 300px;
+
+200px – left 300 - right 
+
+все лишнее что попадает в элемент таблицы переноститься вверх
+
+tr*2>th*6^tr*5>td*6
+
+дз
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2</title>
+    <style>
+        * {
+            color: red; /*универсальный селектор*/
+        }
+        
+        h1 {
+            color: forestgreen;
+             text-align: center; /* left, right, center, justify */
+        }
+
+        p {
+            color: rgb(25, 151, 151);
+            text-align: justify;
+        }
+
+        h3 {
+            color: rgb(128, 128, 128);
+        }
+
+        #big_text {
+            background-color: #222;
+        }
+
+        .txt_orange {
+            color: orangered;
+            font-size: 25px;
+        }
+
+        .bg_yellow {
+            /* background-color: #ff0; */
+        }
+
+        html {
+            font-size: 40px;
+            /* = 1 rem */
+        }
+
+        body {
+            background-color: #440;
+            background-image: url(1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            /* прокрутка картинки */
+            background-size: contain;
+            /* правило cover - растягивает картинку чтоб она не заполнит все пространство по самой. 
+            contain - вписывается в элемент
+            квадрат - cover and contain are the same 
+            */
+            /* прокрутка картинки */
+        }
+        .site {
+            background-color: rgba(100, 30, 0, 0.5)
+        }
+        table, td, th {
+            border-style: solid;
+            border-collapse: collapse;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+
+        <table>
+            <tr>
+                <th rowspan="2">ФИО</th>
+                <th rowspan="2">Б</th>
+                <th colspan="4">2019</th>
+            </tr>
+            <tr>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th>IV</th>
+            </tr>
+            <tr>
+                <td>Дима</td>
+                <td>0</td>
+                <td>67</td>
+                <td>7</td>
+                <td>45</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Влад</td>
+                <td>89</td>
+                <td>56</td>
+                <td>67</td>
+                <td>90</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>Леша</td>
+                <td>65</td>
+                <td>67</td>
+                <td>34</td>
+                <td>90</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Эльдар</td>
+                <td>45</td>
+                <td>90</td>
+                <td>45</td>
+                <td>34</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Даня</td>
+                <td>67</td>
+                <td>34</td>
+                <td>90</td>
+                <td>99</td>
+                <td>45</td>
+            </tr>
+        </table>
+
+        <p class="txt_orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span
+                class="bg_yellow">laboriosam
+                necessitatibus magni est quo, labore
+                adipisci, nulla atque laudantium nesciunt accusantium!</span> Hic, pariatur numquam, ratione magni fuga
+            vitae officiis atque unde tempore rerum aut quam culpa in. Maiores, laudantium nulla quia iusto nisi quam
+            ipsam
+            doloremque labore officiis vitae? Ad.</p>
+        <p style="color: green" class="bg_yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus in
+            voluptatum nam deleniti
+            neque corporis repellat magnam quas, amet obcaecati?</p>
+
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, magnam!</h3>
+        <p id="big_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, suscipit cum aliquam porro
+            temporibus voluptatem quod optio eos, minus veniam corporis illum deleniti a <img src="2.jpeg" alt="bear"
+                title="AngryBear" height="50px"> ipsum vitae natus quia dolor voluptatum? Dolore eum distinctio sunt
+            omnis
+            optio suscipit cumque earum, sed veritatis fuga aut. Quisquam nostrum sit omnis ad magnam, quaerat
+            perspiciatis
+            veniam doloribus dolores eligendi consequuntur, minus id assumenda.</p>
+
+        <p class="bg_yellow txt_orange">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam delectus
+            ducimus ea
+            consequatur accusantium totam eum, ipsum ipsa rerum. Consequatur, eaque at. Earum ducimus non omnis modi
+            maiores
+            ut ab? Neque accusantium ratione dignissimos iste veniam incidunt pariatur quae, beatae cum eum explicabo
+            facere
+            officiis quis! Nam consectetur vitae unde.</p>
+    </div>
+
+</body>
+
+</html>
