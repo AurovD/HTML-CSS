@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Закажите наш курс!</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Запишитесь к нам на курс!</h1>
+		<form action="">
+			<div class="form">
+				<div class="form-block">	
+					<label for="el1">Как вас зовут</label>
+					<input id="el1" type="text" name="student_name" placeholder="Даниил">
+				</div>
+				<div class="form-block ml50">
+					<label for="el2">Ваш номер телефона</label>
+					<input id="el2" type="tel" name="student_tel" placeholder="+7(900)123-45-67">
+				</div>
+				<div class="form-block">
+					<label for="el3">Ваш email</label>
+					<input id="el3" type="email" name="student_email" placeholder="danya@opozdun.net">
+				</div>
+				<div class="form-block ml50">
+					<label for="el4">Выберите дисциплину</label>
+					<select id="el4" name="course">
+						<option value="html1">HTML&CSS. Beginner</option>
+						<option value="html2">HTML&CSS. Middle</option>
+						<option value="html3">HTML&CSS. Hard</option>
+						<option value="js1">JavaScript. Start</option>
+						<option value="js2">JavaScript. Client</option>
+						<option value="js3">Node.js</option>
+					</select>
+				</div>
+				<div class="form-block mb0">
+					<label for="el5">Ваш уровень английского</label>
+					<select id="el5" name="en_lvl">
+						<option value="none">отсутствует</option>
+						<option value="A">Elementary</option>
+						<option value="B">Intermidiate</option>
+						<option value="C">Advance</option>
+					</select>
+				</div>
+				<div class="form-block mb0 ml50">
+					<input class="btn" type="submit" value="Заказать курс" name="sub">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

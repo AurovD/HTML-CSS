@@ -1,7 +1,8 @@
 
 /* box-sizing: content-box
 border-box;
-включение всего что есть в гранницах */
+включение всего что есть в гранницах 
+косяк inline block - все строки выравниваются по нижней границы -> verical-align*/
 html {
     font-size: 20px;
 }
@@ -11,12 +12,13 @@ body {
 }
 h1 {
     margin: 0 0 30px;
-    text-align: center;   
+    text-align: center;  
+    color: rgb(163, 0, 143); 
 }
 .wrapper {
     height: 100vh;
     background: #ccc;
-    padding: 50px;
+    padding: calc((100vh - 500px) / 2) auto;
     /* реальная высота больше */
     height: calc(100vh-100px);
     box-sizing: content-box;
@@ -26,17 +28,55 @@ h1 {
 }
 .form {
     font-size: 0;
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 
+    margin: calc((100vh - 500px) / 2) auto;
 }
 
 .form-block {
-    height: 60px;
-    padding: 10px;
-    border: 1px solid #000;
+    /* outline: 1px solid #000; очерчивание границ */
     display: inline-block;
+    vertical-align: top;
     font-size: 1rem;
+    margin-bottom: 15px;
+    height: 92px;
+    width: calc(50% - 25px);
 }
 input, select, option{
-    font: 1rem monospace;
-
+    font: 1rem "Lucinda Console" monospace;
+    color: rgb(163, 0, 143);
+}
+.form-block > *{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-block > *:not(label) {
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid rgb(163, 0, 143);
+    background: transparent;
+    margin-top: 5px;
+}
+.mb0 {
+    margin-bottom: 0;
+}
+.ml50 {
+    margin-left: 50px;
+}
+.form-block > .btn {
+    width: 350px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 92px;
+    border: none;
+    background: rgb(163, 0, 143);
+    color: #fff;
+    border-radius: 10px;
 }
 
