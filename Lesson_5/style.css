@@ -1,0 +1,42 @@
+
+/* box-sizing: content-box
+border-box;
+включение всего что есть в гранницах */
+html {
+    font-size: 20px;
+}
+body {
+    margin: 0;
+    font: 1rem Rubik, Verdana, Helvetica, sans-serif;
+}
+h1 {
+    margin: 0 0 30px;
+    text-align: center;   
+}
+.wrapper {
+    height: 100vh;
+    background: #ccc;
+    padding: 50px;
+    /* реальная высота больше */
+    height: calc(100vh-100px);
+    box-sizing: content-box;
+    /* v2*/
+    height: 100vh;
+    box-sizing: border-box;
+}
+.form {
+    font-size: 0;
+}
+
+.form-block {
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+    font-size: 1rem;
+}
+input, select, option{
+    font: 1rem monospace;
+
+}
+
