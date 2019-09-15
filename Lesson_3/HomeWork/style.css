@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    padding: 50px 50px 0px 90px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #240040, #501e75);
+}
+h1 {
+    float: left;
+    color: #fff;
+    /* font-family: Mistral, sans-serif; */
+    /* font: 2rem Rubik, Verdana, Helvetica, sans-serif; */
+    font-family: 'Marvel', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.img {
+    float: right;
+    margin-right: 50px;
+}
+.img > img {
+    height: 70px;
+}
+.scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-top: 80px;
+}
+.big-box {
+    /* outline: 1px solid #000; */
+    margin: 60px 0 0 10px;
+    height: 750px;
+    width: 8000px;
+    min-width: 100%;
+    vertical-align: top;
+}
+.in-box {
+    height: 100%;  
+    font-size: 0;
+    /* background: green; */
+    margin-right: 50px;
+    display: inline-block;
+}
+.column {
+    width: 300px;
+    /* background: red; */
+    height: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.column:last-child {
+    margin: 0;
+}
+.rectangle {
+    /* background: yellow; */
+    height: 140px;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+.css {
+    background-image: url(Images/css-illustration.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.joke {
+    background-image: url(Images/moth-light.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.norway{
+    background-image: url(Images/Norway_Photo_Frithjof_Fure_-__www.fjordnorway.com___-_Aurlandsfjord.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ithub{
+    background-image: url(Images/tild3035-6332-4639-b365-313231376435____-02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.out-square {
+    /* background: yellow; */
+    height: 140px;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+.square {
+    /* background: black; */
+    width: 145px;
+    height: 100%;
+    display: inline-block;
+}
+.square:first-child {
+    margin-right: 10px;
+}
+.mouse {
+    background-image: url(Images/rad.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ugly {
+    background-image: url(Images/ugly.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ithub-square {
+    background-image: url(Images/6789.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .scroll::-webkit-scrollbar {
+    display: none;
+  } */

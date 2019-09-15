@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Squares</title>
+    <style>
+        .outer {
+            width: 500px;
+            height: 800px;
+            background: lightgray;
+            margin: auto;
+            position: relative;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+        }
+        .red {
+            background: #f00;
+            position: absolute; /* от body положение по вьюперту. он сдивается относительно границ родительского элемента который отличен от static */
+            /* left: 0; */
+            right:100%;
+            top: 150px;
+            z-index: 1;
+        }
+        .green {
+            background: #00ff00;
+            position: relative; /* относительно своего положения top, bottom,, right, left*/
+            left: -100px;
+            bottom: -80px;
+            z-index: 3;
+        }
+        .blue {
+            background: #0000ff;
+            position: fixed;
+            /* top: calc(50vh - 100px);
+            left: calc(50vw - 100px); */
+            top: 100px;
+            left: 500px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner red"></div>
+        <div class="inner green"></div>
+        <div class="inner blue"></div>
+    </div>
+</body>
+</html>

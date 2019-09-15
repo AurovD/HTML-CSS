@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-height: 100vh;
+    width: 900px;
+    margin: auto;
+    background: #aaa;
+    padding: 20px;
+    /* column-count: 2; */
+}
+h2, p {
+    margin: 0;
+}
+h2 {
+    margin-bottom: 20px; 
+    column-span: all;  /* по центру */
+}
+h2:hover {
+    color: green;
+}
+/* h2::bofore/after  */
+h2::before {
+    content: " ";
+    color: yellow;
+    border-right: 5px solid yellow;
+    margin-right: 10px;
+}
+h2::after {
+    content: "";
+    /* color: yellow;
+    border-left: 5px solid yellow;
+    margin-left: 10px; */
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #ff0;
+    position: absolute;
+    left: calc(50%-50px);
+    bottom: -30px;
+}
+h2 {
+    position: relative;
+
+}
+/*  */
+P {
+    text-align: justify; /* текст по ширине */
+    text-indent: 50px; /* красная строка */
+    /* column-count: 4; /* колонки */
+    /* column-width: 250px; ширина колонок. минимальная ширина */
+    /* column-gap: 50px; расстояние между колонками */
+    /* column-rule: 2px dashed green; границы между колоночками только вертикали */ 
+    column-gap: 30px;
+    column-rule: 2px dashed green;
+    margin-bottom: 20px;
+}
+/*
+.right {
+    column-count: 2;
+}
+.left{
+    column-count: 2;
+    height: 500px;
+}
+.pic {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    column-span: all;
+} */
+
+.figures div {
+    margin: 20px;
+    display: inline-block;
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    border-radius: 50%;
+}
+.rectangle {
+    width: 400px;
+    height: 200px;
+    background-color: #f00;
+}
+.oval {
+    width: 400px;
+    height: 200px;
+    background-color: #f00;
+    border-radius: 50% 70%;
+}
+.triangle1 {
+    /* border: 100px solid;
+    border-right-color: lime;
+    border-bottom-color: magenta;
+    border-left-color:aqua;
+    border-top-color: orange; */
+    border-bottom: 200px solid red;
+    border-left: 100px solid rgba(0,0,0,0);
+    border-right: 100px solid transparent;
+}
+.triangle2 {
+    border-right: 200px solid red;
+    border-top: 70px solid transparent;
+    border-bottom: 130px solid transparent;
+}
+.triangle3 {
+    border-left: 100px solid red;
+    border-bottom: 100px solid red;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.content {
+    height: 400px;
+    background: #ccc;
+    overflow-y: hidden;
+    overflow-x: auto; 
+}
+.content-inner {
+    height: 100%;
+    min-width: 100%;
+    width: 6000px;
+}
+.tetraedr {
+    width: 200px;
+    border-bottom: 200px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.romb {
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;   
+    position: relative; 
+    bottom: 100px;
+}
+.romb::after {
+    content: "";
+    border-top: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    /* width: 0; */
+    position: absolute; 
+    top: 100px;
+    right: -50px;
+}

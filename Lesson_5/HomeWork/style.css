@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh(100 - 40px);
+    padding: 10px;
+    background: black;
+    font: 1rem Rubik, Verdana, Helvetica, sans-serif;
+}
+h1 {
+    margin: 0 0 30px;
+    text-align: center;  
+    color: #fff; 
+}
+form {
+    background: #fff;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+div {
+    margin: 15px auto;
+    width: 400px;
+    
+}
+input {
+    border-radius: 50px;
+}
+input[type="submit"] {
+    color: white;
+    background: #000;
+    height: 30px;
+    width: 100px;
+    border: none;
+}
+
