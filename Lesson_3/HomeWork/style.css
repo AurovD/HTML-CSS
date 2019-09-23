@@ -41,13 +41,13 @@ h1 {
 .in-box {
     height: 100%;  
     font-size: 0;
-    /* background: green; */
+    background: green; 
     margin-right: 50px;
     display: inline-block;
 }
 .column {
     width: 300px;
-    /* background: red; */
+    background: red; 
     height: 100%;
     display: inline-block;
     margin-right: 10px;
@@ -57,11 +57,12 @@ h1 {
     margin: 0;
 }
 .rectangle {
-    /* background: yellow; */
+ background: yellow; 
     height: 140px;
     margin-bottom: 10px;
     font-size: 0;
 }
+/*
 .css {
     background-image: url(Images/css-illustration.png);
     background-size: contain;
@@ -86,14 +87,15 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 .out-square {
-    /* background: yellow; */
+     background: yellow; 
     height: 140px;
     margin-bottom: 10px;
     font-size: 0;
 }
 .square {
-    /* background: black; */
+     background: black;
     width: 145px;
     height: 100%;
     display: inline-block;
@@ -101,6 +103,7 @@ h1 {
 .square:first-child {
     margin-right: 10px;
 }
+/*
 .mouse {
     background-image: url(Images/rad.JPG);
     background-size: contain;
@@ -119,6 +122,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 /* .scroll::-webkit-scrollbar {
     display: none;
   } */
