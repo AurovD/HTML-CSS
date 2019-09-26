@@ -125,7 +125,7 @@ while (n !== 0) {
         hex += `F`;
     } else if (n % 16 === 14) {
         hex += `E`;       
-    } else if (16 === 13) {
+    } else if (n % 16 === 13) {
         hex += `D`;      
     } else if (n % 16 === 12) {
         hex += `C`;
