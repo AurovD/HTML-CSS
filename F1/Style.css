@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1200px;
+    height: 100vh;
+    background-color: #f00;
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+    background-color: yellow;
+}
+.logo {
+    width: 280px;
+}
