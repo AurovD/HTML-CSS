@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.card {
+    width: 500px;
+    height: 250px;
+    border: 10px solid gold;
+    display: flex;
+    border-radius: 30px;
+}
+.left {
+    width: 195px;
+    height: 100%;
+/*    background-color: blue;*/
+    border-right: 3px dashed green;
+}
+.photo {
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/Joker-Movie-Set-Video-Joaquin-Phoenix-Crying.jpg);
+    box-shadow: 5px 5px 4px rgba(0,0,0,.4);
+    margin: 0 auto;
+}
+.twitter {
+    width: 25px;
+    height: 25px;;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/Twitter_bird_logo_2012.svg.png);
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+.info {
+/*    background-color: red;*/
+    width: 100%;
+    padding: 0 20px 0 20px;
+    border-left: 3px dashed green;
+}
+h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: justify;
+}
+.stars {
+    color: red;
+    font-size: 1.5em;
+    margin-top: 10px 0 0 0;
+}
+h4 {
+    margin: 0;
+} 
+
+
+    
