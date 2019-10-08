@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .block {
+            height: 50px;
+/*            background: lime;*/
+            margin: 10px 0;
+        }
+        .red {
+            background-color: red;
+        }
+        .lime {
+            background-color: lime;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        divCount = 3;
+        function createEl(color) {
+            let div = document.createElement("div");
+            div.className ="block " + color;
+            document.body.appendChild(div);
+            
+        }
+        
+        while (divCount) {
+            createEl("red");
+//            let div = document.createElement("div");
+//            div.className ="block";
+//            document.body.appendChild(div);
+            divCount--;
+        }
+        
+        for (divCount = 4; divCount > 0; divCount--) {
+             createEl("blue"); 
+        }
+        
+        let c = 7; +prompt(`Введите число`);
+        let number = 0;
+        let slash = " ";
+        let vivod = "";
+        let slashNum = 2;
+        
+        function multiple(count) {
+            for (let num = 1; num <= count; num++ ) {
+                for (let row = 1; row <= count; row++) {
+                    number = num * row +" ";
+                    number += slash;
+                    vivod += number;
+                        if (row === c) {
+                            vivod += "\n";
+                        }
+                    
+            }
+        }
+        console.log(vivod);
+        console.log(typeof(number));
+        }
+        
+        multiple(c);
+        
+//        for (let num = 1; num <= count; num++ ) {
+//            for (let row = 1; row <= count; row++) {
+//                number = num * row;
+//                number += string.repeat(slashNum);
+//                vivod += number;
+//                    if (row === 10) {
+//                        vivod += "\n"
+//                    }
+//            }
+//        }
+//        console.log(vivod);
+//        console.log(typeof(number));
+        
+        
+        
+        let happyNum = prompt(`Введите четырехзначное число`);
+        let l = happyNum.length;
+        
+        function getHappyNum(happyNum) {
+            let letter = "";
+            let firstNum;
+            let secNum;
+            let thNum;
+            let fifNum;
+            for(index = 0; index <= 4; index++) {
+                letter = happyNum.charAt(index);
+                letter *= 1;
+                if (index == 0) {
+                    firstNum = letter;
+                    console.log(firstNum);
+                } else if (index === 1) {
+                    secNum = letter;
+                    console.log(secNum);
+                } else if (index === 2) {
+                    thNum = letter;
+                    console.log(thNum);
+                } else if (index === 3) {
+                    fifNum = letter;
+                    console.log(fifNum);
+                } 
+            }
+            let first = firstNum + secNum;
+            let second = thNum + fifNum;
+            if (first == second) {
+                    console.log(`Счас`);
+                } else {
+                    console.log(`Не счас`);
+                }
+            
+        }
+        
+        if(l === 4) {
+            getHappyNum(happyNum);
+        } else {
+            console.log(`Это не 4-хзначное`);
+        }
+        
+        console.log(`   _~_  `);
+        console.log(`  (0 0)   `);
+        console.log(`  / V \\  `);
+        console.log(`/(  _  )\\  `);
+        console.log(`  ^^  ^^  `);
+        
+        
+    </script>
+</body>
+</html>
