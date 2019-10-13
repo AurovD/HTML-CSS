@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JS</title>
+    <style>
+        div {
+            background-color: #f0f;
+            display: flex;
+            width: 400px;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+        div > div {
+            background-color: blue;
+            width: calc(100% /3);
+            height: calc(100% /3);
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Client JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolorem, velit corrupti quia, quae eos! Ipsa
+        maiores libero suscipit impedit, earum vel esse tenetur quam odio sed, cum aut ducimus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.<span>Lorem ipsum dolor sit amet.</span>Lorem ipsum dolor sit
+        amet, consectetur adipisicing.</p>
+    <script>
+        let something = document.childNodes[1].lastChild; //отображение дочрних элементов ищем body nodelist - список узлов  document.childNodes[1].childNotes[2]
+        //let something = document.childNodes[1].childNodes[2]
+        //console.log(something.childNodes);
+        let bodyFamily = something.childNodes;
+        //console.log(bodyFamily[0].nextSibling);
+
+        let h1 = document.childNodes[1].lastChild.childNodes[0].nextSibling;
+        //console.log(h1.parentNode);
+
+        let body = document.body;
+        h1 = body.firstElementChild;
+        console.log(h1);
+        let name = "kljl" //prompt("what's ur name", "Mr.Nobody")
+        h1.textContent += ` It's personal page of ${name}`; //= замена +=добавится
+        // body.textContent += "<div>Hello there!</div>";
+        //.nodeType .nodeName .nodeValue
+
+        //.hasChildNodes() есть ли дети
+        let h11 = h1.cloneNode(true);
+        h11.textContent ="heloo there";
+        console.log(h1, h11);
+        // body.replaceChild(h1, h11); //replaceChild?
+        body.removeChild(h1);
+        body.insertBefore(h1, body.lastElementChild.previousElementSibling); //
+        body.replaceChild(h11,h1);
+
+        let div = document.createElement("div"); 
+        body.appendChild(div);
+        // div.innerText = "<h2>kjhukh</h2>";
+        // div.innerHTML ="<h2>kjhukh</h2>";
+        
+
+        for (let i = 0; i < 9; i++) {
+            let divInner = document.createElement("div"); 
+            div.appendChild(divInner);
+        }
+
+        
+    </script>
+</body>
+
+</html>

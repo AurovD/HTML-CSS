@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    <style>
+        div {
+            background-color: #fff;
+            display: flex;
+            width: 600px;
+            height: 1200px;
+            flex-wrap: wrap;
+            border: 2px solid #000;
+        }
+
+        div div {
+            background-color: #fff;
+            width: calc(100% /5);
+            height: calc(100% /2);
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Таблица умножения</h1>
+    <script>
+        let body = document.body;
+        let div = document.createElement("div");
+        body.appendChild(div);
+
+        for (let i = 1; i <= 10; i++) {
+            let divInner = document.createElement("div");
+            div.appendChild(divInner);
+
+            let myCode = "";
+            let number = 0;
+            while (number <= 10) {
+                myCode += `<p>${i} * ${number} = ${i * number}</p>`;
+                number++; 
+                myCode = myCode
+                divInner.innerHTML = myCode;
+            }
+            // myCode = myCode
+            // divInner.innerHTML = myCode;
+        }
+    </script>
+</body>
+
+</html>
