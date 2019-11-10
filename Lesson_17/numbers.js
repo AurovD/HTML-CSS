@@ -39,7 +39,7 @@ console.log(summ);
 //variant 2
 summ = 0;
 for (let k in arr) {
-    summ =+ arr[k];
+    summ += arr[k];
 }
 console.log(summ);
 
