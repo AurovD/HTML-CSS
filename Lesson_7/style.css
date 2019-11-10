@@ -6,7 +6,7 @@ body {
 .wrapper {
     width: 1300px;
     margin: 0 auto;
-    background: #aaa;
+/*    background: #aaa;*/
 }
 header{
     height: 140px;
@@ -131,7 +131,7 @@ vertical-align: top;
 .loh {
     margin: 17px;
 }
-h3::after {
+.line::after {
     content: "";
 	display: block;
 	width: 100px;
@@ -149,7 +149,7 @@ h3::after {
     line-height: 20px;
 }
 .heaven {
-    height: 192px;;
+    height: 192px;
     background: url(BadCat/images/heaven.jpg) no-repeat center center / cover;
     color: #fff;
     padding: 780px 0 0 0;
@@ -176,12 +176,116 @@ h1 {
     letter-spacing: 2px;
 }
 .team {
-    background: yellow;
+    background: #fff;
 }
-.team h2 {
+ h2 {
     text-align: center;
     padding: 60px 0;
 }
+
+.dream-team {
+    display: inline-block;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.row1  .dream-team {
+    width: 380px;
+    height: 300px;
+    margin: 0 20px 40px 0;
+}
+.rowTwo  .dream-team {
+    margin: 0 13px 0 0;
+    vertical-align: middle;
+}
+.rowTwo {
+    margin: 0 0 35px 0;
+/*    background: red;*/
+    height: 330px;
+}
+.black {
+    background-image: url(BadCat/images/vasya.jpg);
+}
+.cook {
+    background-image: url(BadCat/images/george.jpg);
+}
+.cucha {
+    background-image: url(BadCat/images/chukcha.jpg);
+    background-size: 150%;
+}
+.white {
+    width: 380px;
+    height: 300px;
+    background-image: url(BadCat/images/mila.jpg);
+}
+.leonid {
+    background-image: url(BadCat/images/leonid.jpg);
+    height: 330px;
+    width: 390px;
+    text-align: center;
+}
+.pougai {
+    width: 380px;
+    height: 300px;
+    background-image: url(BadCat/images/kirill.jpg);
+    line-height: 330px;
+}
+.leonid h2 {
+    color: #fff;
+    margin-top: 90px;
+    padding: 0;
+}
+.leonid p:nth-child(2){
+    color: #0f0;
+    font-size: 24px;
+    margin: 0;
+}
+.leonid p:last-child{
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 20px;
+}
+.map-text {
+    height: 235px;
+    background: #4a506a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.map-text  h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.map {
+    height: calc(170px);
+    background: url(BadCat/images/map.png) no-repeat center center / cover;
+    text-align: right;
+    font-family: 'Asap', sans-serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    padding-top: 550px;
+}
+.map img {  
+    width: 80px;
+    float: left;
+    position: relative;
+    left: 510px;
+    bottom: 340px;
+    
+    
+}
+
+.adress p {
+    margin:  0 50px 0;
+}
+
+.form-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
 /*
  h3::after {
 	content: "";

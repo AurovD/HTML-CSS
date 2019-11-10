@@ -11,7 +11,43 @@ body {
 header {
     height: 100px;
     background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
 }
 .logo {
-    width: 280px;
+    width: 30%;
+/*    background-color: chartreuse;*/
+    line-height: 100px;
+}
+.logo img {
+    width: 180px; 
+    vertical-align: middle;
+    margin-left: 50px;
+}
+.nav {
+    width: 40%;
+    line-height: 100px;
+    list-style-type: none;
+/*    background-color: royalblue;;*/
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    width: 120px;
+    text-align: center;
+/*    background-color: firebrick;*/
+    box-sizing: border-box;
+    justify-content: space-around;
+    color: #fff;
+}
+.search {
+    line-height: 100px;
+    background-color: brown;
+    padding: 0;
+    margin: 0;
 }
