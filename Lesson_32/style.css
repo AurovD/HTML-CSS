@@ -1,0 +1,147 @@
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #d3d3d3;
+}
+h1 {
+  margin: 0;
+    text-align: center;
+}
+h1 a:hover {
+  color: inherit;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 90px;
+  min-height: calc(100vh - 90px);
+  position: relative;
+}
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.view li {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.view li:hover {
+  background: #8f8f8f;
+}
+.view li.active {
+  background: #b1b1b1;
+}
+.table {
+  display: none;
+}
+.table.active {
+  display: table;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+table th {
+  background: #8f8f8f;
+}
+table td,
+table th {
+  height: 30px;
+  overflow: auto;
+  text-align: left;
+  padding: 5px;
+}
+/*
+table tr:nth-child(2n-1) td {
+  background: #b1b1b1;
+}
+table tr:nth-child(2n) td {
+  background: #c2c2c2;
+}
+*/
+.cards-container {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.cards-container.active {
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(20% - 60px);
+  padding: 20px;
+  border: 1px solid #b1b1b1;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.card span {
+  text-align: center;
+  padding: 5px 0;
+}
+.card .group {
+  font-weight: 600;
+}
+.groups-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  display: none;
+}
+.groups-container.active {
+  display: flex;
+}
+.groups-container .group-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  max-height: 500px;
+}
+.groups-container .group {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  border: 1px solid #b1b1b1;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.group-card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  height: 70px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script src="script.js"></script>
+    <style>
+        #userText {
+            border: 1px solid red;
+            padding: 20px;
+        }
+        .bb {
+            border-color: blue !important;
+        }
+    </style>
+</head>
+<body>
+   <form action="#" method="GET">
+       <input type="text" name="user_name" placeholder="Ваше имя"><br>
+       <input type="text" name="user_name" placeholder="Ваша фраза"><br>
+       <input type="button" name="button" value="Напимать сообщение" onclick="clickBtn()">
+   </form>
+   <div id="userText"></div>
+   <script>
+       let form = document.forms[0];
+       let block = document.getElementById("userText");
+       function clickBtn() {
+           let name = form.elements[0].value;
+           let text = form.elements[1].value;
+           block.innerText = name + ": " + text;
+       }
+
+       let btn = form.elements[form.length -1];
+    //    let btn = form.querySelector("input[type=\"button\"]");
+        btn.onclick = function() {
+            block.className = "bb";
+        }
+/*
+        onlick - нажатие мышкой
+        onmouseup / onmousedown 
+        onchange - изменние значения состояния
+        oninput - в момент ввода текса
+        onkeypress / onkeyup / onkeydown - событие для наджатия клавиш с клавы
+        onload - при зарузке
+        onlouseover/ onmouseout - наведение hover/ !hover
+        onfocus/ onblur наведение фокуса убрать фоокус
+        */
+
+        btn.addEventListener("click", function() {
+            block.style.background = "cyan";
+            // block.style.display = "none";
+        });
+
+        btn.addEventListener("click", clickBtn)
+
+        btn.removeEventListener("click", clickBtn);
+
+        // form.elements[0].addEventListener("input", function(){
+        //     // block.innerHTML += "<br>" + this.value;
+        //     block.innerHTML += "<br>" + this.value[this.value.length - 1];
+        // })
+
+        btn.addEventListener("click", function(){
+            let name = form.elements[0].value;
+           let text = form.elements[1].value;
+          let div = document.createElement("div");
+          div.innerHTML = `${name}: "${text}"<hr>`;
+          block.appendChild(div);
+        })
+        
+   </script>
+</body>
+</html>

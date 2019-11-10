@@ -1,0 +1,47 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.site {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.square {
+    height: 50vh;
+    border: 1px solid black;
+}
+.colors {
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+}
+.color {
+    width: calc(100% / 7);
+    height: 100%;
+    border: solid; 
+    box-sizing: border-box;
+}
+.red {
+    background: red;
+}
+.orange {
+    background: orange;
+}
+.yellow {
+    background: yellow;
+}
+.green {
+    background: green;
+}
+.lblue {
+    background: lightblue;
+}
+.dblue {
+    background: darkblue;
+}
+.violet {
+    background: violet;
+}
