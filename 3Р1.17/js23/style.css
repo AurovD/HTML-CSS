@@ -1,0 +1,37 @@
+body {
+    /*m0+p0*/
+    margin: 0;
+    padding: 0;
+}
+.container {
+    /*w700+m0-a*/
+    width: 700px;
+    margin: 0 auto;
+}
+header, footer {
+    background: #666666;
+    min-height: 50px;
+}
+header {
+    padding: 20px;
+}
+#logo {
+    /*w50+h50*/
+    width: 50px;
+    height: 50px;
+    background: #5f7;
+    box-shadow: 20px 15px #c5f;
+}
+.menu {
+    /*lst_n+m0+p0+df*/
+    list-style-type: none;
+    margin: 25px 0 0;
+    padding: 0;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+section {
+    padding: 20px;
+}

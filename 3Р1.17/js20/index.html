@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JavaScript</title>
+    <style>
+        div {
+            background: #f0f;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div div {
+            width: calc(100% / 3);
+            height: calc(100% / 3);
+            border: 1px solid #ff0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Client JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ea?</p>
+    <p>Lorem ipsum dolor sit amet. <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span> Lorem ipsum dolor sit.</p>
+    <script>
+        /*
+            // alert("Hello everyone");
+            let update = confirm("Вы хотите перезагрузить страницу?");
+            // prompt("Enter number", 10);
+            console.time("circle");
+            let n = 0;
+            for (let i = 0; i < 1000; i++) {
+                n += i;
+                // console.log(i, n);
+            }
+            console.log(n);
+            console.timeEnd("circle");
+            if (update) {
+                location.reload();
+            } else {
+                console.log("Обновление провалено!");
+            }
+
+            //
+            // this в браузере = window
+            // свойства window:
+            // - history
+            // - location
+            // - navigator
+            //
+        */
+
+
+        // let something = document.childNodes[1].childNodes[2];
+        let something = document.childNodes[1].lastChild;
+        // console.log(something.childNodes);
+        let bodyFamily = something.childNodes;
+        let h1 = document.childNodes[1].lastChild.childNodes[0].nextSibling;
+        console.log(h1.parentNode);
+        let body = document.body;
+        h1 = body.firstElementChild;
+        console.log(h1);
+        let name = prompt("Как вас зовут?", "Мистер Никто");
+        h1.textContent = `Это - персональная страница ${name}`;
+        // body.textContent += "Привет здесь!";
+        let h11 = h1.cloneNode(true);
+        h11.textContent = "Привет здесь!";
+        // console.log(h1, h11);
+        body.removeChild(h1);
+        console.log(h1);
+        body.insertBefore(h1, body.lastElementChild.previousSibling);
+        body.replaceChild(h11, h1);
+
+        let div = document.createElement("div");
+        body.appendChild(div);
+        // div.innerText = "<h2>Ололо!</h2>";
+        // div.innerHTML = "<h2>Ололо!</h2>";
+
+        for (let i = 0; i < 9; i++) {
+            let innerBox = document.createElement("div");
+            div.appendChild(innerBox);
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

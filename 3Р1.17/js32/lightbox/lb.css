@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+.lightbox {
+    width: 95vw;
+    height: 95vh;
+    background: #333;
+    position: fixed;
+    top: 2.5vh;
+    left: 2.5vw;
+    display: none;
+}
+.active {
+    overflow: hidden;
+}
+.active .lightbox {
+    display: block;
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+}
+.item {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background: no-repeat center / contain;
+}
+.img1 {
+    background-image: url(images/pic1.jpg);
+}
+.img2 {
+    background-image: url(images/pic2.png);
+}
+.img3 {
+    background-image: url(images/pic3.png);
+}
+.img4 {
+    background-image: url(images/pic4.png);
+}
+.img5 {
+    background-image: url(images/pic5.png);
+}
+.img6 {
+    background-image: url(images/pic6.png);
+}
+.img7 {
+    background-image: url(images/pic7.png);
+}
+.img8 {
+    background-image: url(images/pic8.png);
+}

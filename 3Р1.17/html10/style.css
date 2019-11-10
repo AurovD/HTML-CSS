@@ -1,0 +1,144 @@
+﻿/*#23A419
+#9A19A4
+#092906*/
+
+body {
+	margin: 0;
+	color: #092906;
+	font: 15px Roboto, Verdana, sans-serif;
+}
+h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h3 {
+	margin-bottom: 10px;
+}
+.block {
+	min-height: 200px;
+	padding: 30px;
+}
+.green {
+	background-color: #23a419;
+}
+.extra-light {
+	background-color: #dedede;
+}
+.light {
+	background-color: #ccc;
+}
+.mb15 {
+	margin-bottom: 15px;
+}
+
+
+.screens {
+	display: flex;
+	flex-wrap: wrap;
+}
+.screens-inner {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 110px;
+}
+.screens-inner h3 {
+	padding: 0 10px;
+	width: calc(100% - 170px);
+}
+.screens-inner p {
+	padding: 0 10px;
+	width: calc(100% - 170px);
+}
+.screens-img {
+	width: 150px;
+	height: 100px;
+	background-color: #23A419;
+}
+
+.reviews {
+	display: flex;
+	flex-wrap: wrap;
+}
+.reviews-inner {
+	width: 50%;
+	display: flex;
+	align-items: flex-end;
+}
+.reviews-photo {
+	width: 70px;
+	height: 70px;
+	background-color: #23a419;
+	border-radius: 50%;
+}
+.reviews-inner blockquote {
+	margin: 0 15px 0 30px;
+	width: calc(100% - 115px);
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #9A19A4;
+	border-radius: 8px;
+	font-style: italic;
+	text-align: justify;
+	position: relative;
+	z-index: 1;
+}
+.reviews-inner blockquote::before {
+	background: #9A19A4;
+	width: 30px;
+	height: 30px;
+	content: "";
+	position: absolute;
+	left: -15px;
+	bottom: 20px;
+	z-index: 0;
+	transform: rotate(45deg);
+			   /* translate(100px, 200px)
+			      scale(1,1)
+			      skew(20deg, 0deg)
+			      rotate(90deg) */
+}
+.reviews-inner blockquote p {
+	position: relative;
+	z-index: 10;
+}
+.reviews-author {
+	color: #23a419;
+	margin-top: 10px;
+}
+
+
+.pluses ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+.plus {
+	width: 50%;
+	padding: 0 15px 0 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+.plus::before {
+	content: url(bulet.svg);
+	width: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+
+
+
+
+
+
+
+

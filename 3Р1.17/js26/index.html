@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Points</title>
+    <style>
+        body {
+            margin: 0;
+            padding: calc(50vh - 202px) calc(50vw - 202px);
+        }
+        .board {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .point {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-5px, -5px);
+        }
+    </style>
+    <script src="oop.js"></script>
+</head>
+<body>
+    <div class="board">
+    </div>
+    <script>
+        function getRandom(n) {
+            return Math.floor(Math.random() * n);
+        }
+        function getCoordinates() {
+            return  getRandom(401);
+        }
+        function getRGB() {
+            return `rgb(${getRandom(256)},${getRandom(256)},${getRandom(256)})`;
+        }
+        function getSize() {
+            let size = getRandom(31);
+            size = size % 2 ? size : size++;
+            return size;
+        }
+        function getType() {
+            return getRandom(2);
+        }
+        console.time("get_points");
+        for (let i = 0; i < 10000; i++) {
+            setTimeout(function() {
+                let A = new Point(getCoordinates(), getCoordinates(), getRGB(), getSize(), getType());
+                let pointA = document.createElement("div");
+                pointA.className = "point";
+                pointA.style.left = A.x + "px";
+                pointA.style.top = A.y + "px";
+                pointA.style.background = A.color;
+                pointA.style.width = A.size + "px";
+                pointA.style.height = A.size + "px";
+                pointA.style.transform = `translate(-${(A.size - 1) / 2}px, -${(A.size - 1) / 2}px)`;
+                // if (A.type) {
+                //     pointA.style.borderRadius = 0;
+                // }
+                let board = document.body.firstElementChild;
+                board.appendChild(pointA);
+            }, 500);
+        }
+        console.timeEnd("get_points");
+
+    </script>
+</body>
+</html>
