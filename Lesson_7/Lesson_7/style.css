@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "gill san nova", sans-serif;
+}
+.wrapper {
+    width: 1300px;
+    margin: 0 auto;
+/*    background: #aaa;*/
+}
+header{
+    height: 140px;
+    background-color: #626262;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 0;
+}
+.logo {
+    height: 100%;
+}
+.logo img {
+    height: 100%;
+}
+.logo, .menu {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+}
+.menu {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 140px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #0f0;
+}
+.banner {
+    height: calc(100vh - 140px);
+    background: url(BadCat/images/banner.jpg) no-repeat center center / cover;
+    text-align: center;
+}
+h2 {
+    margin: 0;
+    font: 40px "itc-american-typewriter", cursive;
+}
+.banner h2 {
+        padding: 60px 0;
+}
+.text-green {
+    color: #0f0;
+}
+.green-box {
+    background: #18e835;
+}
+.green-box h2 {
+    text-align: center;
+    padding: 60px 0;
+}
+.out-box {
+    width: 1200px;
+    margin: 0 auto;
+}
+.row1, .row2 {
+    font-size: 0;
+}
+.in-box {
+    background: #fff;
+    width: 245px;
+    height: 358px;
+    padding: 0 15px 0 20px;
+    display: inline-block;
+    font-size: 17pt;
+    margin: 0 26.6px 50px 0; 
+    border-radius: 10px;
+vertical-align: top;
+}
+.in-box h3 {
+    font-weight: bold;
+    font-size: 19pt;
+    text-align: center;
+    margin: 25px 0 5px 0;
+}
+.in-box:last-child {
+    margin-right: 0;
+}
+.circle {
+    border: 2px solid #e6c878;
+    width: 98px;
+    height: 98px;
+    margin: 15px auto 0 auto;
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hotel {
+    background-image: url(BadCat/icons/34Vet_hotel.svg);
+}
+.cat {
+    background-image: url(BadCat/icons/34Vet_cat.svg);
+}
+.bird {
+    background-image: url(BadCat/icons/34Vet_bird.svg);
+}
+.ex {
+    background-image: url(BadCat/icons/34Vet_exhibition.svg);
+}
+.groom {
+    background-image: url(BadCat/icons/34Vet_grooming.svg);
+}
+.toy {
+    background-image: url(BadCat/icons/34Vet_toys.svg);
+}
+.survey {
+    background-image: url(BadCat/icons/34Vet_survey.svg);
+}
+.mat {
+    background-image: url(BadCat/icons/Tilda_Icons_8yo_mat.svg);
+}
+.loh {
+    margin: 17px;
+}
+.line::after {
+    content: "";
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #e6c878;
+    position: relative;
+    left: calc(50% - 50px);
+    top: 5px;
+}
+.in-box  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    font-weight:700;
+    line-height: 20px;
+}
+.heaven {
+    height: 192px;
+    background: url(BadCat/images/heaven.jpg) no-repeat center center / cover;
+    color: #fff;
+    padding: 780px 0 0 0;
+}
+
+.heaven-text1 {
+    text-align: left;
+    width: 50%;
+/*    background: red;*/
+    float: right;
+    padding: 0 0 0 0px;;
+/*    margin: 646px 0 0 0;*/
+    line-height: 0;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family:"gill-sans-nova-condensed";
+    font-size: 90pt;
+}
+.heaven-text1 h2 {
+    margin-top: 50px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.team {
+    background: #fff;
+}
+ h2 {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.dream-team {
+    display: inline-block;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.row1  .dream-team {
+    width: 380px;
+    height: 300px;
+    margin: 0 20px 40px 0;
+}
+.rowTwo  .dream-team {
+    margin: 0 13px 0 0;
+    vertical-align: middle;
+}
+.rowTwo {
+    margin: 0 0 35px 0;
+/*    background: red;*/
+    height: 330px;
+}
+.black {
+    background-image: url(BadCat/images/vasya.jpg);
+}
+.cook {
+    background-image: url(BadCat/images/george.jpg);
+}
+.cucha {
+    background-image: url(BadCat/images/chukcha.jpg);
+    background-size: 150%;
+}
+.white {
+    width: 380px;
+    height: 300px;
+    background-image: url(BadCat/images/mila.jpg);
+}
+.leonid {
+    background-image: url(BadCat/images/leonid.jpg);
+    height: 330px;
+    width: 390px;
+    text-align: center;
+}
+.pougai {
+    width: 380px;
+    height: 300px;
+    background-image: url(BadCat/images/kirill.jpg);
+    line-height: 330px;
+}
+.leonid h2 {
+    color: #fff;
+    margin-top: 90px;
+    padding: 0;
+}
+.leonid p:nth-child(2){
+    color: #0f0;
+    font-size: 24px;
+    margin: 0;
+}
+.leonid p:last-child{
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 20px;
+}
+.map-text {
+    height: 235px;
+    background: #4a506a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.map-text  h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.map {
+    height: calc(170px);
+    background: url(BadCat/images/map.png) no-repeat center center / cover;
+    text-align: right;
+    font-family: 'Asap', sans-serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    padding-top: 550px;
+}
+.map img {  
+    width: 80px;
+    float: left;
+    position: relative;
+    left: 510px;
+    bottom: 340px;
+    
+    
+}
+
+.adress p {
+    margin:  0 50px 0;
+}
+.form {
+    background: linear-gradient(to bottom, #d1a347, #d1a347,#4a506a,#4a506a);
+    padding-bottom: 60px;
+}
+.form h2 {
+    padding: 60px 0 10px 0;
+}
+.form-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*
+ h3::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 5px;
+	background: #e6c878;
+    position: relative;
+    left: calc(50% - 50px);
+    top: 0px;
+}
+*/
+td {
+    vertical-align: top;
+    padding-top: 20px;
+}
+table {
+    color: #fff;
+    vertical-align: top;
+}
+table h3 {
+    font: 18pt "itc-american-typewriter";
+    margin: 0;
+}
+label p {
+    margin: 0;
+    width: 600px;
+    font: 18pt "itc-american-typewriter";
+}
+p input {
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    color: #ff0;
+    background: none;
+    border: 1px solid #fff;
+    font: 25px "itc-american-typewriter";
+    padding-left: 10px;
+}
+p input[type="date"] {
+    width: 180px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+p input[type="submit"] {
+    margin-top: -10px;
+    width: 550px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #0f0;
+    color: #595a65;
+}
+p textarea {
+    width: 550px;
+    background: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font: 17px "itc-american-typewriter";
+    padding-left: 10px;
+}
+#rights {
+    text-align: center;
+    color: #fff;
+    font: 18pt "itc-american-typewriter";
+    margin: 150px 0 0 0;
+}
+    
